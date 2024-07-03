@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="687.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_aula1.HelloController">
+   <children>
+      <AnchorPane layoutX="191.0" layoutY="46.0" prefHeight="367.0" prefWidth="306.0" style="-fx-background-color: #40E0D0;">
+         <children>
+            <Label layoutX="101.0" layoutY="49.0" text="Cadastre-se">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nome" layoutX="55.0" layoutY="100.0" prefHeight="29.0" prefWidth="197.0" promptText="Nome completo" />
+            <TextField fx:id="email" layoutX="56.0" layoutY="142.0" prefHeight="29.0" prefWidth="197.0" promptText="E-mail" />
+            <PasswordField fx:id="senha" layoutX="56.0" layoutY="184.0" prefHeight="29.0" prefWidth="197.0" promptText="Insira sua senha" />
+            <PasswordField fx:id="confirmaSenha" layoutX="56.0" layoutY="228.0" prefHeight="29.0" prefWidth="197.0" promptText="Confirme sua senha" />
+            <CheckBox fx:id="termos" layoutX="70.0" layoutY="268.0" mnemonicParsing="false" text="Li e aceito os termos de uso" />
+            <Button fx:id="cadastrar" layoutX="128.0" layoutY="299.0" mnemonicParsing="false" onAction="#cliquebotaocadastrar" text="Sign in" />
+            <Hyperlink fx:id="esqueciSenha" layoutX="95.0" layoutY="330.0" onAction="#telaLogin" text="Já possuo uma conta" />
+            <Label fx:id="texto" layoutX="48.0" layoutY="21.0" prefHeight="17.0" prefWidth="213.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
